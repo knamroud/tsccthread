@@ -1,5 +1,5 @@
 # TSCCThread
-This repository contains a simple Python class implementing a Thread to compile and debug at runtime TypeScript files in a Django or Flask project.  
+This repository contains a simple Python class implementing a Thread to compile and debug TypeScript files at runtime in a Django or Flask project.  
 ## Usage
 Run the thread passing the "input" (TypeScript) and "output" (JavaScript) directory.  
 You can specify additional flags for the tsc as third parameter. Please, do pass them as a list.   
