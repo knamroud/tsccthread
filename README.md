@@ -8,5 +8,6 @@ Please not that any file not ending in .ts or starting with a . contained in the
 When running with Flask in debug mode, add `from werkzeug.serving import is_running_from_reloader` at the top of your file and run the thread in an `if not is_running_from_reloader():`. This will avoid the thread restarting every time the server restarts.  
 ## Examples
 Run the thread in your main code:  
-`ts_check = TSCCThread("static/ts", "static/js")`  
-`ts_check.start()`  
+```bash
+ts_check = TSCCThread("static/ts", "static/js")
+ts_check.start()```
