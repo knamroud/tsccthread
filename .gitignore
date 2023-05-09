@@ -1,0 +1,5 @@
+build
+tsccthread.egg-info
+dist
+.vscode
+__pycache__

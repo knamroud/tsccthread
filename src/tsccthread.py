@@ -7,11 +7,11 @@ from os.path import exists, join, getmtime
 class TSCCThread(Thread):
     '''Thread used to check and compile TypeScript files in your Python Flask/Django project'''
 
-    def __init__(self, tspath: str, jspath: str, flags: list = [], debug: bool = False):
+    def __init__(self, tspath: str, jspath: str, flags: str = " ", debug: bool = False):
         Thread.__init__(self)
         self.tsp = tspath  # Path containing TypeScript files to compile.
         self.jsp = jspath  # Path containing resulting JavaScript files.
-        self.flags = flags # Default to empty list, contains additional flags to pass to the tsc compiler.
+        self.flags = flags.split(" ") # Default to empty list, contains additional flags to pass to the tsc compiler.
         self.debug = debug # Defaults to False, if True the thread will check files until stopped, otherwise only one time.
 
     def run(self):

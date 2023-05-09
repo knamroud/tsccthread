@@ -1,0 +1,8 @@
+[project]
+name = "tsccthread"
+version = "0.1"
+authors = [
+  { name="Kirelos Namroud", email="namroudkirelos04@gmail.com" },
+]
+description = "A simple Python class implementing a Thread to compile and debug TypeScript files at runtime in a Django or Flask project."
+readme = "README.md"
