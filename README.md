@@ -10,4 +10,4 @@ When running with Flask in debug mode, add `from werkzeug.serving import is_runn
 Run the thread in your main code:  
 ```bash
 ts_check = TSCCThread("static/ts", "static/js")
-ts_check.start()```
+ts_check.start() ```
